@@ -1,0 +1,180 @@
+@font-face {
+    font-family: numFont;
+    src: url("fonts/euphorigenic.ttf"),url("fonts/euphorigenic.eot");
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("media/background.png");
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.year {
+    width: 11.1vw;
+    height: 26.6vh;
+    background-color: rgba(249, 249, 249, 0);
+    font-size: 12vw;
+    font-family: numFont;
+    text-align: center;
+}
+
+.fedback-div {
+    position:absolute;
+    top: 25vh;
+    left: 19.8vw;
+    width: 65vw;
+    height: 73vh;
+}
+
+#second-part {
+    display: none;
+    background-image: url("media/second-quest.png");
+    background-size: 100% 100%;
+}
+
+#back-button {
+    position:absolute;
+    top: 43vh;
+    left: 25.8vw;
+    width: 12vw;
+    height: 7vh;
+    background-image: url("media/back-btn.png");
+    background-size: 100% 100%;
+}
+#back-button:hover {
+    background-image: url("media/back-hover.png");
+    background-size: 100% 100%;
+}
+
+#fedback {
+    display: none;
+}
+
+#fedback-button {
+    position:absolute;
+    top: 43vh;
+    left: 25.8vw;
+    width: 12vw;
+    height: 7vh;
+}
+
+.good-fedback {
+    background-image: url("media/good-resalt.png");
+    background-size: 100% 100%;
+}
+.bad-fedback {
+    background-image: url("media/bad-resalt.png");
+    background-size: 100% 100%;
+}
+.good-button {
+    background-image: url("media/next-btn.png");
+    background-size: 100% 100%;
+}
+.bad-button {
+    background-image: url("media/try-btn.png");
+    background-size: 100% 100%;
+}
+.good-button:hover {
+    background-image: url("media/next-hover.png");
+    background-size: 100% 100%;
+}
+.bad-button:hover {
+    background-image: url("media/try-hover.png");
+    background-size: 100% 100%;
+}
+
+.button {
+    cursor: pointer;
+}
+
+#seond-part {
+    display: none;
+}
+
+#ans-part {
+    position: absolute;
+    top: 50vh;
+    left: 27.8vw;
+    width: 41vw;
+    display: flex;
+    justify-content: space-between;
+}
+#cheack-button {
+    position: absolute;
+    left: 37vw;
+    bottom: 4vh;
+    width: 27vw;
+    height: 8vh;
+    background-image: url("media/cheack-btn.png");
+    background-size: 100% 100%;
+}
+#cheack-button:hover {
+    background-image: url("media/cheack-hover.png");
+    background-size: 100% 100%;
+}
+
+#logo {
+    position: absolute;
+    left: -0.2vw;
+    top: 1.4vh;
+    width: 7vw;
+    height: 12vh;
+    background-image: url("media/logo.png");
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width:350px){
+    body{
+        background-image: url("media/empty-back.png");
+    }
+   
+    #text{
+        position: absolute;
+        left: 8vw;
+        top: 15vh;
+        width: 84vw;
+        height: 16vh;
+        background-image: url("media/text.png");
+        background-size: 100% 100%;
+    }
+
+    #logo {
+        width: 18vw;
+    }
+    
+    #ans-part {
+        width: 41.2vw;
+    }
+
+    .year {
+        width: 9.5vw;
+        height: 26.9vh;    
+        font-size: 21vw;
+    }
+
+    #cheack-button {
+        left: 34vw;
+        width: 32vw;
+    }
+
+    .fedback-div {
+        top: 20vh;
+        left: 8.8vw;
+        width: 85vw;
+        height: 76vh;
+    }
+
+    #fedback-button {
+        top: 45vh;
+        left: 26.5vw;
+        width: 30vw;
+        height: 8vh;
+    }
+
+    #back-button {
+        top: 45vh;
+        left: 25.8vw;
+        width: 32vw;
+        height: 8vh;
+    }
+}
